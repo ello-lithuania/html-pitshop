@@ -1,6 +1,11 @@
 
 $( document ).ready(function() {
-    $( ".list-show-sublist" ).on( "click", function() {
+    $( ".list-show-sublist" ).on( "mouseenter", function() {
+        $( ".desktop-category-menu" ).each(function() {
+            $( this ).addClass( "hidden" );
+        });
+        $( ".list-show-sublist.active" ).next('div.toggle-btn').toggleClass( "hidden" );
+        $( ".list-show-sublist.active" ).removeClass('active');
         $(this).toggleClass('active');
         $(this).next('div.toggle-btn').toggleClass( "hidden" );
     } );
@@ -12,7 +17,7 @@ $( document ).ready(function() {
     } );
 
     /// navbar hover
-    $( ".hover-menu-item" ).on( "click", function(e) {
+    $( ".hover-menu-item" ).on( "mouseenter", function(e) {
         e.preventDefault();
         if($(this).hasClass('active')) {
             let item = $(this).attr('data-hoverItem');
@@ -28,6 +33,11 @@ $( document ).ready(function() {
             $(this).addClass('active');
             $(`.${item}`).removeClass('hidden');
         }
+    } );
+
+    $('.menu-item-main').on( "mouseleave", function(e) {
+        $( ".hover-menu-item.active" ).removeClass('active');
+        $(this).addClass('hidden');
     } );
 
     // login btn
@@ -112,6 +122,18 @@ $( document ).ready(function() {
     $(document).on("change",".checkbox-btn-toggle",function(e) {
         $(this).toggleClass('active-checkbox');
         $(this).closest('.checkbox-btn-toggle-main').toggleClass('checkbox-btn-toggle-main-active');
+    });
+
+    $(document).on("DOMSubtreeModified",".select-selected",function(e) {
+        let title = $('.select-selected').text().trim().toLowerCase();
+        setTimeout(() => {
+            $( ".custom-select-js select option" ).each(function( index ) {
+                if($(this).text().trim().toLowerCase() == title) {
+                    let attr = $(this).attr('value');
+                    window.location.href = attr;
+                }
+            }); 
+        }, "1000");
     });
 
     $(document).on("click",".chooe-date-calendar-main button",function(e) {
@@ -212,7 +234,7 @@ $( document ).ready(function() {
     } );
 
     // categories show
-    $( ".btn-show-categories-menu" ).on( "click", function(e) {
+    $( ".btn-show-categories-menu" ).on( "mouseenter", function(e) {
         e.preventDefault();
         if($('.active-category-menu-main').length) {
             $('.active-category-menu').removeClass('active-category-menu');
@@ -225,7 +247,13 @@ $( document ).ready(function() {
         
         $(`.${text}`).toggleClass('hidden').addClass('active-category-menu-main');
     } );
-    
+
+    $(document).on("mouseleave", ".active-category-menu-main", function (e) {
+        $(this).addClass('hidden').removeClass('active-category-menu-main');
+        $( ".list-show-sublist.active" ).next('div.toggle-btn').toggleClass( "hidden" );
+        $( ".list-show-sublist.active" ).removeClass('active');
+    } );
+
     // left menu
     $( ".left-menu-list-main button" ).on( "click", function(e) {
         e.preventDefault();

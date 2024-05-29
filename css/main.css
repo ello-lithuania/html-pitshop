@@ -719,6 +719,9 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 5px
   }
 }
+.list-show-sublist {
+  transition: 1s all;
+}
 .list-show-sublist.active {
   margin-bottom: 11px !important;
 }
@@ -1551,4 +1554,32 @@ p.button-toggle-checked-bold {
 }
 .btn-choose-date-end {
   margin-left: 10px;
+}
+.category-text h2 {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  letter-spacing: -1%;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.category-text p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 960px) {
+  .category-text h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .category-text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .category-text p:last-of-type {
+     margin-bottom: 0;
+  }
 }

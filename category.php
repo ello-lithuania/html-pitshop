@@ -42,10 +42,10 @@
       <div class="col-span-5">
                 <div class="custom-select-js">
                   <select>
-                    <option value="0">Populatity</option>
-                    <option value="1">Most revelant</option>
-                    <option value="2">Price low to high</option>
-                    <option value="3">Price high to low</option>
+                    <option value="https://google.com">Populatity</option>
+                    <option value="https://google.com">Most revelant</option>
+                    <option value="https://google.com">Price low to high</option>
+                    <option value="https://google.com">Price high to low</option>
                   </select>
                 </div>
       </div>
@@ -677,10 +677,14 @@
 
       <hr class="border-[#E2E1E1] mb-[15px]"/> 
 
-      <h2 class="dm-sans-bold text-[14px] lg:text-[16px] leading-[20px] lg:leading-[22px] tracing-[-1%] mb-[20px]">TURTLE WAX žaidimo „perki, siunti pirkimo kvito nuotrauką ir gali laimėti“ taisyklės</h2>
+      <div class="category-text">
 
-      <p class="text-[14px] lg:text-[16px] leading-[20px] lg:leading-[22px] mb-[20px]">DIY autocosmetics offer a wide range of products and solutions for car enthusiasts who prefer to take care of their vehicle's appearance themselves. From car wash soaps and waxes to scratch removers and polishing compounds, DIY autocosmetics provide an affordable and convenient way to maintain and enhance the look of your vehicle.</p>
-      <p class="text-[14px] lg:text-[16px] leading-[20px] lg:leading-[22px] lg:mb-[20px]">Professional autocosmetics, on the other hand, are often used by automotive detailing experts and professionals who demand high-quality results and a professional finish. Professional autocosmetics typically feature advanced formulas and technologies that are specifically designed to achieve superior cleaning, polishing, and protection for various automotive surfaces. These products are often used in professional auto detailing shops and body shops to achieve showroom-quality results and restore the shine and luster of vehicles. While DIY autocosmetics are suitable for regular maintenance and minor imperfections, professional autocosmetics are preferred for more intensive detailing projects and for achieving professional-grade results.</p>
+        <h2>TURTLE WAX žaidimo „perki, siunti pirkimo kvito nuotrauką ir gali laimėti“ taisyklės</h2>
+
+        <p>DIY autocosmetics offer a wide range of products and solutions for car enthusiasts who prefer to take care of their vehicle's appearance themselves. From car wash soaps and waxes to scratch removers and polishing compounds, DIY autocosmetics provide an affordable and convenient way to maintain and enhance the look of your vehicle.</p>
+        <p>Professional autocosmetics, on the other hand, are often used by automotive detailing experts and professionals who demand high-quality results and a professional finish. Professional autocosmetics typically feature advanced formulas and technologies that are specifically designed to achieve superior cleaning, polishing, and protection for various automotive surfaces. These products are often used in professional auto detailing shops and body shops to achieve showroom-quality results and restore the shine and luster of vehicles. While DIY autocosmetics are suitable for regular maintenance and minor imperfections, professional autocosmetics are preferred for more intensive detailing projects and for achieving professional-grade results.</p>
+        
+      </div>
 
     </div>
   </div>
