@@ -282,7 +282,7 @@ body {
 </div>
 
 <div class="header-cart-btn-main w-full hidden absolute left-0 right-0 top-0 z-10 min-h-[70vh]">
-    <div class="flex justify-end">
+    <div class="flex min-h-[100vh] justify-end">
         <div class="bg-white px-[26px] py-[20px] min-w-[531px]">
             <div class="flex items-center justify-between mb-[24px]">
                 <p class="dm-sans-bold text-[20px]">Shopping cart (5)</p>
